@@ -21,8 +21,8 @@
       <p class="content__subtitle">по различным неисправностям поездов</p>
     <div class="formLogin">
       <form class="content__input">
-        <!-- поле ввода телефона (изменил type="text на намбер") --><input class="content__login" type="number" id="tel" name="number" value="" placeholder="Номер телефона">
-       <!-- поле ввода пароля --> <input class="content__password" type="password" name="passwd" id="fps" placeholder="Пароль">  
+        <!-- поле ввода телефона (изменил type="text на намбер") --><input class="content__login" pattern="[0-9]" type="text" id="tel" name="number" value="" placeholder="Номер телефона">
+       <!-- поле ввода пароля --> <input class="content__password"  type="password" name="passwd" id="fps" placeholder="Пароль">  
        <!-- кнопка войти --><input  class="content__btn" type="submit" class="mbt" id="btn" onclick="ge('aform').style.visibility='hidden'" value="Вход">
         <p class="content__info">Для входа требуется ввести <b>номер Вашего телефона</b> (вводите только цифры) и <b>пароль</b>,
           введённый при активации учётной записи.</p>
