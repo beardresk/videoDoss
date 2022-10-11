@@ -118,7 +118,9 @@
 .content__btn {
   max-width: 360px;
   width: 97%;
-  height: 30px;
+  min-height: 30px;
+  font-family: Rrail;
+  cursor: pointer;
 }
 
 .content__info {
