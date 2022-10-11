@@ -121,6 +121,8 @@
   min-height: 30px;
   font-family: Rrail;
   cursor: pointer;
+  background-color: #f3513f;
+  border: 1px;
 }
 
 .content__info {
