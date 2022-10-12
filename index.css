@@ -15,6 +15,7 @@
   min-height: 100%;
   margin: 0 auto;
   background-image: url(./images/sapsanPC.jpg);
+  background-position: -37px 20px;
 }
 
 @media screen and (max-width:1110px) {
@@ -40,7 +41,7 @@
   box-shadow: 2px 2px 5px rgb(122 122 122 / 50%);
 }
 
-.header__logo {
+.header__logo { /* ЛОГОТИП РЖД */
   margin: 5px 10px;
   max-width: 90px;
   max-height: 40px;
@@ -51,9 +52,7 @@
   justify-content: flex-end;
 }
 
-
-/* ФОРМА ДЛЯ ВХОДА */
-.form {
+.form {  /* ФОРМА ДЛЯ ВХОДА БЕЛАЯ ПЛАШКА */
   max-width: 450px;
   width: 100%;
   background-color: white;
@@ -63,13 +62,13 @@
 }
 
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:480px) { /* ФОРМА ДЛЯ ВХОДА БЕЛАЯ ПЛАШКА С МЕДАЗАПРОСОМ С ОТСТУПАМИ КРАЁВ */
   .form {
     margin: 150px 10px 0 10px;
   }
 }
 
-.content__titile {
+.form__titile { /* ТЕХНИЧИСКИЕ ВИДЕО */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,7 +77,13 @@
   margin-bottom: 0;
 }
 
-.content__subtitle {
+@media screen and (max-width:440px) {
+  .form__titile {
+    font-size: 25px;
+  } 
+}
+
+.form__subtitle { /* ПО РАЗЛИЧНЫМ НЕИСПРАВНОСТЯМ ПОЕЗДА */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,13 +91,24 @@
   margin-top: 5px;
 }
 
-.content__input {
+@media screen and (max-width:440px) {
+  .form__subtitle {
+    font-size: 14px;
+  } 
+}
+
+.formLogin { /* КОНТЕЙНЕР ДИВ С ФОРМАМИ */
+  display: flex;
+  justify-content: center;
+}
+
+.form__input { /* САМА ФОРМА */
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.content__login {
+.form__login { /* ПОЛЕ ВВОДА ТЕЛЕФОНА */
   font-family: RrailTwo;
   max-width: 350px;
   width: 95%;
@@ -101,7 +117,7 @@
   margin-bottom: 5px;
 }
 
-.content__password {
+.form__password { /* ПОЛЕ ВВОДА ПАРОЛЯ */
   font-family: RrailTwo;
   max-width: 350px;
   width: 95%;
@@ -110,12 +126,7 @@
   margin-bottom: 5px;
 }
 
-.formLogin {
-  display: flex;
-  justify-content: center;
-}
-
-.content__btn {
+.form__btn { /* САМА КНОПКА ВХОДА */
   max-width: 360px;
   width: 97%;
   min-height: 30px;
@@ -127,10 +138,28 @@
   padding: 0;
 }
 
-.content__info {
+.form__info { /* ИНФО О ТОМ КАК ВХОДИТЬ */
   max-width: 360px;
   width: 95%;
   font-family: RrailTwo;
   font-weight: 400;
   text-align: center;
+}
+
+@media screen and (max-width:440px) {
+  .form__info {
+    font-size: 14px;
+  } 
+}
+
+.section {
+
+}
+
+.section__search {
+
+}
+
+.section__input {
+  width: 500px;
 }

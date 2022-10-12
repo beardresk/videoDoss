@@ -17,14 +17,14 @@
   
   <section class="login">
   <div class="form">
-      <h1 class="content__titile">Техничиские видео</h1>
-      <p class="content__subtitle">по различным неисправностям поездов</p>
+      <h1 class="form__titile">Технические видео</h1>
+      <p class="form__subtitle">по различным неисправностям поездов</p>
     <div class="formLogin">
-      <form class="content__input">
-        <!-- поле ввода телефона (изменил type="text на намбер") --><input class="content__login" pattern="[0-9]" type="text" id="tel" name="number" value="" placeholder="Номер телефона">
-       <!-- поле ввода пароля --> <input class="content__password"  type="password" name="passwd" id="fps" placeholder="Пароль">  
-       <!-- кнопка войти --><input  class="content__btn" type="submit" class="mbt" id="btn" onclick="ge('aform').style.visibility='hidden'" value="Вход">
-        <p class="content__info">Для входа требуется ввести <b>номер Вашего телефона</b> (вводите только цифры) и <b>пароль</b>,
+      <form class="form__input" action="./glavStr.html" method="get"> <!-- ВРЕМЕННО ДОБАВИЛ ПЕРЕХОД ПО ССЫЛКЕ НА КНОПКУ ВОЙТИ НА ГЛАВНУЮ СТРАНИЦУ -->
+        <!-- поле ввода телефона (изменил type="text на намбер") --><input class="form__login" pattern="[0-9]" type="text" id="tel" name="number" value="" placeholder="Номер телефона">
+       <!-- поле ввода пароля --> <input class="form__password"  type="password" name="passwd" id="fps" placeholder="Пароль">  
+       <!-- кнопка войти --><input  class="form__btn" type="submit" class="mbt" id="btn" onclick="ge('aform').style.visibility='hidden'" value="Вход">
+        <p class="form__info">Для входа требуется ввести <b>номер Вашего телефона</b> (вводите только цифры) и <b>пароль</b>,
           введённый при активации учётной записи.</p>
       </form>
     </div>

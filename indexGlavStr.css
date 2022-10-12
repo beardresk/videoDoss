@@ -1,0 +1,60 @@
+@import url(//db.onlinewebfonts.com/c/05b45c19e2f09f11f6f56c1ed5e0e981?family=RussianRail+G+Pro);
+
+@font-face {
+  font-family: Rrail;
+  src: url(./fonts/FSRAIL75.ttf);
+}
+
+@font-face {
+  font-family: RrailTwo;
+  src: url(./fonts/FSRAIL55.ttf);
+}
+
+.page {
+  max-width: 100%;
+  min-height: 100%;
+  margin: 0 auto;
+}
+
+.login {
+  display: flex;
+}
+
+.header {
+  margin: 0 auto;
+  background-color: white;
+  height: 50px;
+  box-shadow: 2px 2px 5px rgb(122 122 122 / 50%);
+}
+
+.header__logo { /* ЛОГОТИП РЖД */
+  margin: 5px 10px;
+  max-width: 90px;
+  max-height: 40px;
+}
+
+.header__block {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.section__search {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  pa
+}
+
+.section__input {
+  width: 90%;
+  border: 1px solid #f3513f;
+  font-weight: 600;
+}
+
+.section__btn {
+  width: 70px;
+  background-color: #f3513f;
+  color:#ffffff;
+  border: 1px solid #f3513f;
+}
