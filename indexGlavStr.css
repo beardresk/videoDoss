@@ -51,6 +51,8 @@
   border: 1px solid #f3513f;
   font-weight: 600;
   margin-right: 4px;
+  border-radius: 1px;
+  -khtml-border-radius: 1px;
 }
 
 .section__btn {
