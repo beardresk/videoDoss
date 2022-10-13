@@ -156,7 +156,7 @@
 .card__elements {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin: 0;
+  margin: 0 10px 0;
   padding: 0;
   list-style: none;
   column-gap: 20px;
@@ -165,17 +165,18 @@
 
 @media screen and (max-width: 1124px) {
 .card__elements {
-    margin: 0 auto;
+  margin: 0 10px 0;
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media screen and (max-width: 700px) {
   .card__elements {
-      margin: 0 auto;
-      grid-template-columns: repeat(1, 1fr);
+    margin: 0 10px 0;
+    grid-template-columns: repeat(1, 1fr);
     }
   }
+
 .card__element {
   /* border: 1px solid #f3513f; */
   min-width: 330px;
@@ -186,6 +187,12 @@
   position: relative;
   box-shadow: 2px 2px 5px rgb(122 122 122 / 50%);
 }
+
+@media screen and (max-width: 330px) {
+  .card__element {
+      min-width: 310px;
+    }
+  }
 
 .card__images {
   display: block;
