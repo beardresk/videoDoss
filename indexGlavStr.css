@@ -39,11 +39,18 @@
 }
 
 .section__search {
-  width: 90%;
+  width: 50%;
   margin: 0 auto;
   margin-top: 20px;
   display: flex;
+  justify-content: space-around;
   font-family: RrailTwo;
+}
+
+@media screen and (max-width:770px) {
+  .section__search {
+    width: 98%;
+  } 
 }
 
 .section__input {
@@ -69,27 +76,27 @@
 }
 
 .link {
-  margin-left: 96px;
+  margin-left: 20px;
   margin-top: 20px;
 }
 
 @media screen and (max-width:770px) {
   .link {
-    margin-left: 40px;
+    margin-left: 10px;
   } 
 }
 
 @media screen and (max-width:440px) {
   .link {
     margin-top: 15px;
-    margin-left: 22px;
+    margin-left: 7px;
   } 
 }
 
 @media screen and (max-width:350px) {
   .link {
     margin-top: 15px;
-    margin-left: 20px;
+    margin-left: 7px;
   } 
 }
 
@@ -108,11 +115,13 @@
   margin-top: 20px;
 }
 
+
 @media screen and (max-width:450px) {
   .navigation {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    margin-top: 10px;
   } 
 }
 
@@ -131,3 +140,87 @@
     margin: 5px;
   } 
 }
+
+.card {
+  max-width: 1280px;
+  margin: 50px auto;
+  padding: 0;
+  display: flex;
+}
+
+.card__elements {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+@media screen and (max-width: 1124px) {
+.card__elements {
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .card__elements {
+      margin: 0 auto;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+.card__element {
+  /* border: 1px solid #f3513f; */
+  min-width: 330px;
+  width: 100%;
+  background-color: #fffbfb;
+  border-radius: 8px;
+  list-style: none;
+  position: relative;
+  box-shadow: 2px 2px 5px rgb(122 122 122 / 50%);
+}
+
+.card__images {
+  display: block;
+  border-radius: 8px 8px 0 0;
+  max-width: 435px;
+  width: 100%;
+  height: 282px;
+  object-fit: fill;
+  background-size: contain;
+}
+
+.card__info {
+  max-width: 246px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px auto;
+}
+
+.card__link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.card__title:hover {
+  color: #f3513f; 
+
+}
+
+.card__title {
+  color: #000000;
+  font-family: RrailTwo;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 29px;
+  margin: 0;
+  text-overflow: ellipsis;
+  white-space: wrap;
+  overflow: hidden;
+  text-align: center;
+}
+
