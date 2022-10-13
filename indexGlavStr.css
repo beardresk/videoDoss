@@ -33,6 +33,10 @@
   max-height: 40px;
 }
 
+.section {
+  margin: 0 auto;
+}
+
 .header__block {
   display: flex;
   justify-content: flex-end;
@@ -146,6 +150,7 @@
   margin: 50px auto;
   padding: 0;
   display: flex;
+  justify-content: center;
 }
 
 .card__elements {
