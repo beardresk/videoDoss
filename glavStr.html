@@ -6,12 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./normalize.css">
   <link rel="stylesheet" href="./indexGlavStr.css">
+  <link rel="stylesheet" href="./menu.css">
   <title>ВИДЕО ДОСС</title>
 </head>
 <body class="page">
   <header class="header"> <!-- ШАПКА САЙТА-->
     <div class="header__block">
       <!-- лого РЖД --><img class="header__logo" src="./images/logo.png" alt="логотип ржд">
+      <input type="checkbox" id="nav-toggle" hidden><label for="nav-toggle" class="mask-content" onclick=""></label>
+      <label for="nav-toggle" class="nav-toggle"></label>
+      <div class="nav">
+        <ul>
+          <li><a href="./?content">Весь контент</a>
+            <li><a href="./?profile">Профиль</a>
+              <li><a href="./?mess">Сообщения</a>
+                <li><a href="./?exit">Выход</a>
+                </ul>
+              </div>
     </div>
   </header>
   
@@ -33,25 +44,20 @@
 
     <div class="card"> <!--КАРТОЧКИ С ВИДЕО-->
       <ul class="card__elements">  <!--ВСЕ КАРТОЧКИ-->
-        <li class="card__element"><!--ОДНА КАРТОЧКА-->
-          <img class="card__images" src="./images/card3.jpg" alt="изображение карточки">
-            <div class="card__info">
-              <p class="card__title">Оказание помощи вслед идущим электропоездом</p>
-            </div>
-        </li>
-
-        <li class="card__element">
-          <img class="card__images" src="./images/card1.jpg" alt="изображение карточки">
-            <div class="card__info">
-              <p class="card__title">Оказание помощи вслед идущим электропоездом</p>
-            </div>
-        </li>
-
-        <li class="card__element">
+        <li class="card__element"> <!--ОДНА КАРТОЧКА-->
           <img class="card__images" src="./images/card2.jpg" alt="изображение карточки">
             <div class="card__info">
               <a class="card__link" href="./index.html">
-                <p class="card__title">Оказание помощи вслед идущим электропоездом</p>
+                <p class="card__title">Оказание помощи вслед идущим электропоездов</p>
+              </a>
+            </div>
+        </li>
+
+        <li class="card__element">
+          <img class="card__images" src="./images/card3.jpg" alt="изображение карточки">
+            <div class="card__info">
+              <a class="card__link" href="./index.html">
+                <p class="card__title">Оказание помощи вслед идущим электропоездов</p>
               </a>
             </div>
         </li>
@@ -59,21 +65,36 @@
         <li class="card__element">
           <img class="card__images" src="./images/card1.jpg" alt="изображение карточки">
             <div class="card__info">
-              <a class="card__link" href="./index.html"><p class="card__title">Оказание помощи вслед идущим электропоездом</p></a>
-            </div>
-        </li>
-
-        <li class="card__element">
-          <img class="card__images" src="./images/card2.jpg" alt="изображение карточки">
-            <div class="card__info">
-              <p class="card__title">Оказание помощи вслед идущим электропоездом</p>
+              <a class="card__link" href="./index.html">
+                <p class="card__title">Оказание помощи вслед идущим электропоездов</p>
+              </a>
             </div>
         </li>
 
         <li class="card__element">
           <img class="card__images" src="./images/card3.jpg" alt="изображение карточки">
             <div class="card__info">
-              <p class="card__title">Оказание помощи вслед идущим электропоездом  </p>
+              <a class="card__link" href="./index.html">
+                <p class="card__title">Оказание помощи вслед идущим электропоездов</p>
+              </a>
+            </div>
+        </li>
+
+        <li class="card__element">
+          <img class="card__images" src="./images/card1.jpg" alt="изображение карточки">
+            <div class="card__info">
+              <a class="card__link" href="./index.html">
+                <p class="card__title">Оказание помощи вслед идущим электропоездов</p>
+              </a>
+            </div>
+        </li>
+
+        <li class="card__element">
+          <img class="card__images" src="./images/card2.jpg" alt="изображение карточки">
+            <div class="card__info">
+              <a class="card__link" href="./index.html">
+                <p class="card__title">Оказание помощи вслед идущим электропоездов</p>
+              </a>
             </div>
         </li>
       </ul>
@@ -81,5 +102,6 @@
     </div>
 
   </section>
+  <script src="./mask.js"></script>
 </body>
 </html>
