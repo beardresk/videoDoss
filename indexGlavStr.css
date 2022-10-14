@@ -77,6 +77,7 @@
   -khtml-border-radius: 1px;
   padding: 1px 2px;
   font-family: RrailTwo;
+  cursor: pointer;
 }
 
 .link {
@@ -137,6 +138,7 @@
   background-color: #f3513f;
   border: 0;
   color: white;
+  cursor: pointer;
 }
 
 @media screen and (max-width:450px) {
@@ -179,7 +181,7 @@
 
 .card__element {
   /* border: 1px solid #f3513f; */
-  min-width: 330px;
+  min-width: 330px;   
   width: 100%;
   background-color: #fffbfb;
   border-radius: 8px;
@@ -207,7 +209,7 @@
 .card__info {
   max-width: 246px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin: 5px auto;
 }
@@ -236,3 +238,75 @@
   text-align: center;
 }
 
+/* СНИЗУ БУДЕТ КОД УЖЕ ПРО КАРТОЧКИ ВНУТРИ */
+
+
+.material {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto 30px;
+}
+
+.material__titile {
+  font-family: Rrail;
+  margin: 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 990px) {
+  .material__titile {
+      font-size: 25px;
+    }
+  }
+
+
+.material__linkImg {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.material__mat {
+  max-width: 640px;
+  width: 95%;
+  max-height: 360px;
+  height: 95%;
+  margin: 30px auto;
+}
+
+.material__comment {
+  max-width: 800px;
+  max-height: 60px;
+  width: 95%;
+  height: 95%;
+  font-family: RrailTwo;
+  font-size: 17px;
+  padding-left: 4px;
+  padding-top: 4px;
+}
+
+@media screen and (max-width: 990px) {
+  .material__comment {
+      font-size: 10px;
+    }
+  }
+
+.material__btn {
+  max-width: 90px;
+  width: 95%;
+  max-height: 30px;
+  height: 95%;
+  font-family: RrailTwo;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.otstup {
+  display: flex;
+  margin-top: 10px;
+  max-width: 808px;
+  width: 95%;
+  justify-content: flex-start;
+}

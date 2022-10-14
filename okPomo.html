@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./normalize.css">
+  <link rel="stylesheet" href="./indexGlavStr.css">
+  <link rel="stylesheet" href="./menu.css">
+  <title>ВИДЕО ДОСС</title>
+</head>
+<body class="page">
+  <header class="header"> <!-- ШАПКА САЙТА-->
+    <div class="header__block">
+      <!-- лого РЖД --><img class="header__logo" src="./images/logo.png" alt="логотип ржд">
+      <input type="checkbox" id="nav-toggle" hidden><label for="nav-toggle" class="mask-content" onclick=""></label>
+      <label for="nav-toggle" class="nav-toggle"></label>
+      <div class="nav">
+        <ul>
+          <li><a href="./?content">Весь контент</a>
+            <li><a href="./?profile">Профиль</a>
+            <li><a href="./?mess">Сообщения</a>
+            <li><a href="./?exit">Выход</a>
+          </ul>
+        </div>
+    </div>
+  </header>
+    <section class="section">
+      <form class="section__search" action='./?search' method='get'> <!--ВСЁ ЧТО СВЯЗАННО С ПОИСКОМ-->
+        <input class="section__input" type='text' name='search' value='' id='sch' placeholder='Введите запрос'/>
+        <input class="section__btn" type='submit' value='ПОИСК'/>
+    </form>
+
+    <div class="link"><!--ЧАСТЬ САЙТА С ССЫЛКАМИ НА ГЛАВНУЮ СТРАНИЦУ-->
+      <a class="link__menu" href="./glavStr.html">Главная страница</a> <!--!ИЗМЕНИТЬ ССЫЛКУ ПОТОМ!-->
+    </div>
+
+    <div class="navigation"> <!--КНОПКИ НАВИГАЦИИ-->
+      <button class="navigation__btn" onclick="window.location='./?section=23'">Ласточка</button> 
+      <button class="navigation__btn" onclick="window.location='./?section=24'">Сапсан</button> 
+      <button class="navigation__btn" onclick="window.location='./?section=25'">Нестандартные ситуации</button>
+    </div>
+
+    <div class="material"> <!--КОНТЕЙНЕР С МАТЕРИАЛОМ-->
+      <h1 class="material__titile">Оказание помощи вслед идущим электропоездом</h1>
+      <a class="material__linkImg" href="./images/okPomo.jpg" target="_blank">
+        <img class="material__mat" src="./images/okPomo.jpg" alt="оказание помощи">
+      </a>
+      <textarea class="material__comment" placeholder="Оставьте свой комментарий"></textarea>
+      <div class="otstup">
+         <button class="material__btn">Отправить</button>
+      </div>
+     
+    </div>
+    </section>
+
+    <script src="./mask.js"></script>
+
+  </body>
