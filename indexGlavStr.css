@@ -238,6 +238,12 @@
   text-align: center;
 }
 
+@media screen and (max-width: 540px) {
+  .card__title {
+      font-size: 18px;
+    }
+  }
+
 /* СНИЗУ БУДЕТ КОД УЖЕ ПРО КАРТОЧКИ ВНУТРИ */
 
 
@@ -301,6 +307,11 @@
   font-family: RrailTwo;
   padding: 2px;
   cursor: pointer;
+  color: white;
+  border-radius: 0;
+  border: 1px;
+  padding: 0;
+  background-color: #f3513f;
 }
 
 .otstup {
